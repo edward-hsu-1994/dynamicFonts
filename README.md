@@ -4,4 +4,4 @@ dynamicFonts
 
 本專案主要功能使用[fontmin](https://github.com/ecomfe/fontmin)套件實作
 
-### [DEMO](dynamicfonts.azurewebsites.net)
+### [DEMO](http://dynamicfonts.azurewebsites.net)
