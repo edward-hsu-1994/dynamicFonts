@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 600px;
+            font-family: 'WCL-03';
+            font-size: 30px;
+        }
+        button {
+            font-size:22pt;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>雲端字體測試</h3>
+    <button style="font-family: 'wt071'">王翰宗中行書繁</button>
+    <button style="font-family: 'WCL-01'">王翰宗新潮體-波浪</button>
+    <button style="font-family: 'WCL-03'">王翰宗波卡體</button>
+
+
+    <textarea id="editor">
+
+    </textarea>
+    <script src="dynamicFonts.js"></script>
+    <script>
+        var buttons = document.getElementsByTagName("button");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].onclick = (e) => {
+                editor.style.fontFamily = e.srcElement.style.fontFamily;
+                loadFonts();
+            }
+        }
+
+        editor.value = "文字測試區域，在這邊輸入文字以便測試雲端字體效果，字體僅供測試";
+        addCloudFonts('WCL-01', 'WCL-03','wt071');
+        loadFonts()
+            .then(function () {
+                console.log("字體讀取完成!!");
+            });
+        var timeout = null;
+        editor.onkeyup = function () {
+            if (timeout) clearTimeout(timeout);
+            timeout = setTimeout(function () {
+                loadFonts().then(function () { clearTimeout(timeout); });
+            }, 200);
+        }
+        editor.onchange = editor.onkeyup;
+    </script>
+</body>
+</html>

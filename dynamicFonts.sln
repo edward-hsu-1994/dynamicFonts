@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "dynamicFonts", "dynamicFonts\dynamicFonts.njsproj", "{B6788278-C3DD-4F37-BC14-964FE944D820}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "dynamicFontsAzure", "dynamicFontsAzure\dynamicFontsAzure.njsproj", "{E27F1D8C-C546-4105-AD93-D5EB1F369195}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6788278-C3DD-4F37-BC14-964FE944D820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6788278-C3DD-4F37-BC14-964FE944D820}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6788278-C3DD-4F37-BC14-964FE944D820}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6788278-C3DD-4F37-BC14-964FE944D820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27F1D8C-C546-4105-AD93-D5EB1F369195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27F1D8C-C546-4105-AD93-D5EB1F369195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27F1D8C-C546-4105-AD93-D5EB1F369195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27F1D8C-C546-4105-AD93-D5EB1F369195}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

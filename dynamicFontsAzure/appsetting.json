@@ -1,0 +1,13 @@
+﻿{
+  "port": 8080,
+  "cors": [
+    {
+      "protocol": [ "http", "https" ],
+      "host": "127.0.0.1"
+    },
+    {
+      "protocol": [ "http", "https" ],
+      "host": "dynamicfonts.azurewebsites.net"
+    }
+  ]
+}
