@@ -44,7 +44,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>true</DebugSymbols>
-	<TypeScriptTarget>ES6</TypeScriptTarget>
+    <TypeScriptTarget>ES6</TypeScriptTarget>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="appsetting.json" />
@@ -54,7 +54,14 @@
     <Content Include="fonts\WCL-01.ttf">
       <Publish>True</Publish>
     </Content>
+    <Content Include="fonts\WCL-02.ttf">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="fonts\WCL-03.ttf">
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="fonts\wt004.ttf" />
+    <Content Include="fonts\wt005.ttf">
       <Publish>True</Publish>
     </Content>
     <Content Include="fonts\wt071.ttf">

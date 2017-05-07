@@ -3,26 +3,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>dynamicFonts - 雲端字型</title>
     <style>
+        body {
+            background-color: #f5f5f5;
+        }
         textarea {
             width: 100%;
-            height: 600px;
+            height:200px;
             font-family: 'WCL-03';
             font-size: 30px;
         }
+
         button {
-            font-size:22pt;
+            font-size: 22pt;
             height: 50px;
+            width: calc(100% / 3 - 3px);
+            text-overflow:ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        h1 {
+            text-align:center;
+            font-family: 'WCL-02';
+            font-weight: 200;
+            font-size: 60pt;
+            text-shadow: 0px 0px 5px #000000, 0px 0px 10px #000000, 0px 0px 15px #000000;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h3>雲端字體測試</h3>
-    <button style="font-family: 'wt071'">王翰宗中行書繁</button>
-    <button style="font-family: 'WCL-01'">王翰宗新潮體-波浪</button>
-    <button style="font-family: 'WCL-03'">王翰宗波卡體</button>
-
+    <h1>dynamicFonts 雲端字型</h1>
+    <p style="text-align:center;font-family: 'WCL-02';"><a href="https://github.com/XuPeiYao/dynamicFonts">Source Code</a></p>
+    <p>
+        <button style="font-family: 'wt071'">王翰宗中行書</button>
+        <button style="font-family: 'WCL-01'">王翰宗新潮體</button>
+        <button style="font-family: 'WCL-03'">王翰宗波卡體</button>
+    </p>
 
     <textarea id="editor">
 
@@ -37,11 +56,11 @@
             }
         }
 
-        editor.value = "文字測試區域，在這邊輸入文字以便測試雲端字體效果，字體僅供測試";
-        addCloudFonts('WCL-01', 'WCL-03','wt071');
+        editor.value = "文字測試區域，在這邊輸入文字以便測試雲端字型效果，字型僅供測試";
+        addCloudFonts('WCL-02','WCL-01', 'WCL-03', 'wt071');
         loadFonts()
             .then(function () {
-                console.log("字體讀取完成!!");
+                console.log("字型讀取完成!!");
             });
         var timeout = null;
         editor.onkeyup = function () {
@@ -51,6 +70,15 @@
             }, 200);
         }
         editor.onchange = editor.onkeyup;
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject'] = r;i[r]=i[r]||function(){
+                      (i[r].q = i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-98710209-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 </html>
